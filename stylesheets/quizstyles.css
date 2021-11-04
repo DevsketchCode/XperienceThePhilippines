@@ -1,0 +1,486 @@
+/* color scheme: 
+lightest orange #FFD3AA;
+light orange #FFA756;
+orange #FB6700;
+gray: #D4EBFF;
+light blue: #8BBBE6; 
+blue #0059A5;
+darker blue: #004987;
+darkest blue #032848;
+*/
+
+/* All images used other than the Philippines map that is credited in the footer, are CC0 or PDM 1.0 and free to use without attribution. */
+
+
+
+* { box-sizing: border-box;}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+/* HEADER */
+
+header {
+  background-color: #FFFFFF;
+  background-image: url('../images/logo.gif');
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-size: contain;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+header > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6vw;
+  margin: 0;
+  padding: .5em 0;
+  text-indent: -9999px; /* hide the text version, but available for screen readers */
+}
+
+
+/* TOP NAVIGATION BAR (bottom nav bar can be found in the footer section) */
+
+#topnav {
+
+  overflow: hidden; /* keeps the content below the nav bar */
+  position: sticky; /* keeps the nav bar on the top of the screen */
+  top: 0; /* required for sticky to work */
+  z-index: 9999;
+}
+#topnav ul {
+  float: right; /* brings the nav links to the right of the screen */
+  background-color: #0059A5;
+  border: 1px solid #000000;
+  display: flex; /* allows the nav links to be spaced out */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+#topnav li {
+
+  display: inline;
+  text-decoration: none;
+}
+#topnav a, .navlogo {
+  color: #FFFFFF;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 2px; 
+  padding: 0.75em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#topnav a:hover, #topnav a:focus {color: #FFA756; background-color: #032848;}
+
+.navlogo {
+  background-color: #FFFFFF;
+  border-right: 1px solid #000000; 
+  color: #000000;
+  font-weight: bold;
+}
+
+
+#home h2 { font-size: 2em; }
+
+#home > section {
+  font-size: 1.2em;
+  padding: 2em 20%;
+}
+
+#home > section a {
+  color: #000000;
+  background-color: #F67600;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  margin: 40px auto 10px;
+}
+
+#home > section a:hover, #home > section a:focus { color: #FFFFFF; }
+
+.tagalogLink {
+  color: #004987;
+  font-weight: bold;
+}
+.tagalogLink:visited {
+  color: #004987;
+}
+.tagalogLink:hover {
+  color: #da6b04;
+}
+
+/*  Footer and Footer Nav Links */
+
+footer {
+  background-color: #0059A5;
+  border-top: 1px solid #032848;
+  clear: both;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer ul {
+  flex: 4;
+  padding: 0;
+  text-align: left;
+}
+footer .navlogo {
+  background-color: #0059A5;
+  border: none;
+  color: #FFFFFF;
+  display: inline;
+  width: 100%;
+}
+
+footer .credit {
+  flex: 1;
+  margin-right: 4em;
+  text-align: right;
+}
+
+footer #copyright {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+footer li {
+  border-right: 1px solid black;
+  display: inline;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+footer li:last-child {
+  border: none;
+}
+
+footer a { color: #FFD3AA; }
+
+footer > ul a { text-decoration: none; }
+footer > ul a:visited { color: #FFA756; }
+footer > ul a:hover, footer a:focus { 
+  color: #F67600; 
+  text-decoration: underline;
+}
+
+footer > p a { color: #FFFFFF;}
+
+.wrapper {
+  border-top: 1px solid #000000;
+  padding: 0;
+  margin: 0;
+}
+
+#pageintro {
+  background-color: #8BBBE6;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  padding: 0 20%;
+  text-align: center;
+}
+
+#pageintro h2 { 
+  color: #032848;
+  font-size: 2.5em;
+  margin: 0 0 10px; 
+  padding-top: 30px;
+}
+
+#pageintro p { padding-bottom: 2em; }
+
+.wrapper > section {
+  background-color: #D4EBFF;
+  border-right:  1px solid #032848;
+  border-bottom: 1px solid #032848;
+  border-left:  1px solid #032848;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.wrapper > section div { padding: 0 4%; }
+
+.wrapper > section h3 {
+  font-size: 1.2em;
+  color: #032848;
+  margin: 0;
+  padding: 2em 0 0.5em;
+}
+
+.wrapper > section h2 {
+  font-size: 1.3em;
+  margin: 0;
+  padding: 2em 0 0.5em;
+}
+
+.wrapper > section p {
+  margin: 0;
+  padding: 1em 1em ;
+}
+
+.wrapper > section:last-child { border: none; }
+
+/* languages page specifics */
+
+#language { background-color: #9BC5EA;   padding-bottom: 3%;}
+
+label {
+  float: left;
+  display: block;
+  text-align: left;
+  width: 150px;
+  padding-left: 10px;
+}
+
+/* Quiz styles */
+
+.translationsContainer, .quizContainer, .questionContainer, .resultsContainer {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.translationsContainer h3, .quizContainer h2, .resultsContainer h2 {
+  margin: 2em 0 0.5em;
+}
+
+.translationsContainer {
+  display: block;
+}
+
+.quizContainer section {
+  display: none;
+}
+
+.questionContainer {
+  background-color: #FFF;
+  border: 1px solid black;
+  min-width: 300px;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+.questionContainerNumber {
+  margin: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+.translationQuestion {
+  font-size: 2.5em;
+  margin: 30px;
+}
+
+table {
+  border: 1px solid black;
+  border-spacing: 0;
+  margin: auto;
+  text-align: center;
+  width: 32%;
+}
+
+th {
+  background-color: #032848;
+  border-bottom: 1px solid #000;
+  color: #FFF;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+tr:nth-of-type(even) {
+  background-color: #FFF;
+}
+
+td {
+  height: 1.3em;
+  padding-left: 1.1em;
+  text-align: left;
+}
+
+/* Quiz questions */
+#startQuizBtn, #resetBtn {
+  margin: 30px;
+}
+
+#gradeQuizBtn {
+  margin: 20px auto;
+}
+
+#previousBtn {
+  visibility: hidden;
+}
+
+#userAnswer {
+  width: 50%;
+}
+
+#nextBtn {
+  visibility: visible;
+}
+
+/* Dots used to show which question they are on */
+.emptyDot {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  color: #000000;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  margin: 10px 5px; 
+  text-decoration: none;
+}
+
+.filledDot {
+  background-color: #032848;
+}
+
+.selectedDot {
+  border: 5px solid #8BBBE6;
+}
+
+.legendBox {
+  box-sizing: initial;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+ }
+
+.resultsContainer table {
+  width: 80%;
+  margin-bottom: 1.1em;
+}
+
+tfoot td {
+  background-color:#032848;
+  border-top: 1px solid #000;
+  color: #FFF;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.finalGradeText {
+  text-align: right;
+}
+
+.finalGrade {
+  font-size: 1.3em;
+}
+
+
+/* ---- DESKTOP ADJUST FOOTER ---- */
+@media only screen and (max-width: 1380px) {
+  footer .navlogo {
+    display: block;
+    padding-top: 0;
+    text-align: left;
+  }
+}
+
+
+/* ---- TABLETS ---- */
+@media only screen and (max-width: 1000px) {
+
+  #pageintro { padding: 0 10%; }
+
+  footer .navlogo {
+    border: none;
+    display: block;
+    padding-top: 0;
+    text-align: center;
+  }
+  footer ul { text-align: center; }
+
+  footer li { 
+    border: none;
+    line-height: 2em; 
+  }
+}
+
+
+/* ---- MOBILE PHONES ---- */
+@media only screen and (max-width: 768px) {
+
+  #topnav ul {
+    justify-content: space-between;
+  }
+  
+  .navhome {
+    flex: 2;
+  }
+  
+  #home > section {
+    font-size: 1.2em;
+    padding: 2em 1em;
+  }
+
+  #pageintro { padding: 0 5%; }
+
+  .wrapper section {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+  }
+
+  .wrapper section h3 {
+    text-align: center;
+  }
+
+  .wrapper section {
+    text-align: justify;
+  }
+
+  .wrapper figure, .wrapper picture, .wrapper img { width: 100%; }
+
+  /* languages page */
+  #language { padding-bottom: 0; }
+
+  #language caption { margin-top: 5%; }
+
+  input { height: 3em; }
+
+
+  /* footer */
+
+  footer { flex-direction: column; }
+
+  footer ul { text-align: center; }
+
+  footer li { border: none; }
+  
+  /* although credit and copyright are the same, had to keep these separated due to them being separated in the desktop version */
+  footer .credit {
+    margin: 10px 0;
+    padding: 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  footer #copyright {
+    margin: 10px 0;
+    padding: 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}

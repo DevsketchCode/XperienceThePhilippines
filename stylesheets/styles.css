@@ -1,0 +1,715 @@
+/* color scheme: 
+lightest orange #FFD3AA;
+light orange #FFA756;
+orange #FB6700;
+gray: #D4EBFF;
+light blue: #8BBBE6; 
+blue #0059A5;
+darker blue: #004987;
+darkest blue #032848;
+*/
+
+/* All images used other than the Philippines map that is credited in the footer, are CC0 or PDM 1.0 and free to use without attribution. */
+
+
+
+* { box-sizing: border-box;}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+
+/* HEADER */
+
+header {
+  background-color: #FFFFFF;
+  background-image: url('../images/logo.gif');
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-size: contain;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+header > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6vw;
+  margin: 0;
+  padding: .5em 0;
+  text-indent: -9999px; /* hide the text version, but available for screen readers */
+}
+
+
+/* TOP NAVIGATION BAR (bottom nav bar can be found in the footer section) */
+
+#topnav {
+
+  overflow: hidden; /* keeps the content below the nav bar */
+  position: sticky; /* keeps the nav bar on the top of the screen */
+  top: 0; /* required for sticky to work */
+  z-index: 9999;
+}
+#topnav ul {
+  float: right; /* brings the nav links to the right of the screen */
+  background-color: #0059A5;
+  border: 1px solid #000000;
+  display: flex; /* allows the nav links to be spaced out */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+#topnav li {
+
+  display: inline;
+  text-decoration: none;
+}
+#topnav a, .navlogo {
+  color: #FFFFFF;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 2px; 
+  padding: 0.75em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#topnav a:hover, #topnav a:focus {color: #FFA756; background-color: #032848;}
+
+.navlogo {
+  background-color: #FFFFFF;
+  border-right: 1px solid #000000; 
+  color: #000000;
+  font-weight: bold;
+}
+
+
+/* PARALLAX EFFECT for Home Page */
+
+.parallaximagetext {
+  margin: 0;
+  padding: 0;
+  text-indent: -9999px; /* hide the text version, but available for screen readers */
+}
+
+.homeimage1, .homeimage2, .homeimage3, .homeimage4 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* attraction */
+.homeimage1 {
+  background-image: url("../images/elnido_lg.jpg");
+  min-height: 600px;
+}
+
+/* transportation */
+.homeimage2 {
+  background-image: url("../images/traffic_lg.jpg");
+  min-height: 600px;
+}
+
+/* food */
+.homeimage3 {
+  background-image: url("../images/filipinofood_lg.jpg");
+  min-height: 600px;
+}
+
+/* language */
+.homeimage4 {
+  background-image: url("../images/language_lg.jpg");
+  min-height: 545px;
+}
+
+#home h2 { font-size: 2em; }
+
+#home > section {
+  font-size: 1.2em;
+  padding: 2em 20%;
+}
+
+#home > section a {
+  color: #000000;
+  background-color: #F67600;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  margin: 40px auto 10px;
+}
+#home > section a:hover, #home > section a:focus { color: #FFFFFF; }
+
+
+/* Content section */
+h2 { font-size: 2.5em; }
+
+
+/*  Footer and Footer Nav Links */
+
+footer {
+  background-color: #0059A5;
+  border-top: 1px solid #032848;
+  clear: both;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer ul {
+  flex: 4;
+  padding: 0;
+  text-align: left;
+}
+footer .navlogo {
+  background-color: #0059A5;
+  border: none;
+  color: #FFFFFF;
+  display: inline;
+  width: 100%;
+}
+
+
+footer .credit {
+  flex: 1;
+  margin-right: 4em;
+  text-align: right;
+}
+
+footer #copyright {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+footer li {
+  border-right: 1px solid black;
+  display: inline;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+footer li:last-child {
+  border: none;
+}
+
+footer a { color: #FFD3AA; }
+
+footer > ul a { text-decoration: none; }
+footer > ul a:visited { color: #FFA756; }
+footer > ul a:hover, footer a:focus { 
+  color: #F67600; 
+  text-decoration: underline;
+}
+
+footer > p a { color: #FFFFFF;}
+
+.wrapper {
+  border-top: 1px solid #000000;
+  padding: 0;
+  margin: 0;
+}
+
+#pageintro {
+  background-color: #8BBBE6;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  padding: 0 20%;
+  text-align: center;
+}
+
+#pageintro h2 { 
+  color: #032848;
+  margin: 0 0 10px; 
+  padding-top: 30px;
+}
+
+#pageintro p { padding-bottom: 2em; }
+
+figure {
+  padding: 0;
+  margin: 0;
+  width: 60%;
+}
+
+figure img { width: 50vw; } /* allows the images to resize responsively */
+
+figcaption {
+  font-family: Papyrus, fantasy;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.wrapper > section {
+  align-content: center;
+  align-items: center;
+  background-color: #D4EBFF;
+  border-bottom: 1px solid #032848;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1em;
+}
+
+.wrapper > section div { padding: 0 4%; }
+
+.wrapper > section h3 {
+  color: #032848;
+  font-size: 1.7em;
+  margin: 0;
+}
+
+.wrapper > section p {
+  margin: 0;
+  padding: 1em 1em ;
+}
+
+
+.wrapper > section:nth-child(even) {
+  background-color: #FFFFFF;
+  flex-direction: row-reverse;
+  overflow: auto; 
+  width:100%;
+}
+
+.wrapper > section:nth-child(even) div { padding: 0 4%; }
+
+.wrapper > section:last-child { border: none; }
+
+
+/* Image Gallery for the Foods Page */
+.thumb {
+  height: 150px;
+  width: 200px;
+}
+
+.fullsize {
+  width: 100%;
+}
+
+.hoverinstruction {
+  color: #032848;
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-top: 2em;
+}
+
+#gallery { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative; 
+  text-align: left;
+}
+
+#gallery ul { 
+  list-style-type: none;
+  width: 560px;
+}
+
+#gallery li { 
+  display: inline; 
+  float: left;
+  padding: 10px;
+}
+
+#gallery img { border: none; }
+
+#gallery a { 
+  color: #FFD3AA;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#gallery figure { 
+  display: none; 
+  width: 40%;
+}
+
+#gallery figcaption { color: #032848; }
+
+#gallery a:hover figure, #gallery a:focus figure {
+  color: #F67600;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  text-align: center;
+}
+
+
+/* languages page specifics */
+
+#language { background-color: #D1DFEB;   padding-bottom: 3%;}
+
+#translationtable {
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-collapse: collapse; 
+  margin: 2% auto 0;
+  width: 70%;
+}
+
+#translationtable caption {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+#translationtable thead > tr { 
+  background-color: #032848;
+  border-bottom: 1px solid #032848;
+  color: #FFFFFF;
+}
+
+#translationtable tr:nth-child(even) { background-color: #D4EBFF;}
+
+#translationtable td, th { 
+  padding-top: 2%;
+  padding-left: 8%;
+  padding-bottom: 2%;
+  text-align: left; 
+}
+#translationtable .english, #translationtable .tagalog { width: 28%; }
+
+.tagalogLink {
+  color: #004987;
+  font-weight: bold;
+}
+.tagalogLink:visited {
+  color: #004987;
+}
+.tagalogLink:hover {
+  color: #da6b04;
+}
+
+
+/* contact form page specifics */
+#contact section {
+  background-color: #D1DFEB;
+  display: block; /* cancels the flex used earlier */
+}
+
+form {
+  background-color: #D4EBFF;
+  border: 1px solid #032848;
+  margin: 1% auto 0;
+  padding: 2%;
+  width: 60%;
+}
+
+#formnote { 
+  font-style: italic; 
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+label {
+  float: left;
+  display: block;
+  text-align: left;
+  width: 150px;
+  padding-left: 10px;
+}
+
+input, textarea {
+  display: block;
+  margin-bottom: 2em;
+}
+
+textarea {
+  height: 15em;
+  width: 65%;
+}
+
+input[type="submit"] { 
+  margin-left: 150px; 
+  width: 5em;
+}
+
+/* ---- DESKTOP ADJUST FOOTER ---- */
+@media only screen and (max-width: 1380px) {
+  footer .navlogo {
+    display: block;
+    padding-top: 0;
+    text-align: left;
+  }
+}
+
+/* ---- TABLETS ---- */
+@media only screen and (max-width: 1000px) {
+  /* turn off parallax */
+  .homeimage1, .homeimage2, .homeimage3, .homeimage4 {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  /* attraction */
+  .homeimage1 {
+    background-image: url("../images/elnido_sm.jpg");
+    min-height: 400px;
+  }
+
+  /* transportation */
+  .homeimage2 {
+    background-image: url("../images/traffic_sm.jpg");
+    min-height: 400px;
+  }
+
+  /* food */
+  .homeimage3 {
+    background-image: url("../images/filipinofood_sm.jpg");
+    min-height: 400px;
+  }
+
+  /* language */
+  .homeimage4 {
+    background-image: url("../images/language_sm.jpg");
+    min-height: 400px;
+  }
+
+  #pageintro { padding: 0 10%; }
+
+
+  footer .navlogo {
+    border: none;
+    display: block;
+    padding-top: 0;
+    text-align: center;
+  }
+  footer ul { text-align: center; }
+
+  footer li { 
+    border: none;
+    line-height: 2em; 
+  }
+
+
+  /* foods page */
+
+  .thumb { display: none; }
+
+  .hoverinstruction {
+    display: none;
+  }
+
+  #gallery {
+    flex-direction: column;
+  }
+
+  #gallery ul { 
+    padding: 0; 
+    width: 100%;
+  }
+
+  #gallery li {
+    float: none;
+  }
+
+  #gallery figure { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+
+  #gallery a:hover figure, #gallery a:focus figure {
+    color: #F67600;
+    display: block;
+    position: static;
+    text-align: center;
+  }
+
+
+  /* languages page */
+  #translationtable { width: 90%; }
+
+
+  /* contact page */
+  #contact section { padding-bottom: 1%; }
+  
+  form { width: 80%; }
+
+  textarea { width: 70%; }
+
+  input[type="submit"] { width: 8em;}
+
+}
+
+
+/* ---- MOBILE PHONES ---- */
+@media only screen and (max-width: 768px) {
+  /* turn off parallax */
+  .homeimage1, .homeimage2, .homeimage3, .homeimage4 {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  /* attraction */
+  .homeimage1 {
+    background-image: url("../images/elnido_sm.jpg");
+    min-height: 200px;
+  }
+
+  /* transportation */
+  .homeimage2 {
+    background-image: url("../images/traffic_sm.jpg");
+    min-height: 200px;
+  }
+
+  /* food */
+  .homeimage3 {
+    background-image: url("../images/filipinofood_sm.jpg");
+    min-height: 200px;
+  }
+
+  /* language */
+  .homeimage4 {
+    background-image: url("../images/language_sm.jpg");
+    min-height: 200px;
+  }
+
+  #topnav ul {
+    justify-content: space-between;
+  }
+  
+  .navhome {
+    flex: 2;
+  }
+  
+  #home > section {
+    font-size: 1.2em;
+    padding: 2em 1em;
+  }
+
+  #pageintro { padding: 0 5%; }
+
+  .wrapper section {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+  }
+
+  .wrapper section h3 {
+    padding: 0 0.2em;
+    font-size: 1.7em;
+    text-align: center;
+  }
+
+  .wrapper section {
+    text-align: justify;
+  }
+
+  .wrapper figcaption { display: none; }
+
+  .wrapper figure, .wrapper picture, .wrapper img { width: 100%; }
+
+
+  /* foods page specifics */
+  #gallery figure { margin-bottom: 20px; }
+
+  #gallery figure:last-of-type { margin-bottom: 0; }
+
+  #gallery ul { margin-bottom: 0; }
+  
+  #gallery figcaption { 
+    display: block; 
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+
+  /* languages page */
+  #language { padding-bottom: 0; }
+
+  #language caption { margin-top: 5%; }
+
+  #translationtable { 
+    border: 0;
+    width: 100%; 
+  }
+
+  #translationtable td, th { 
+    border-right: 1px solid #032848;
+    padding-left: 2%;
+  }
+
+  #translationtable .phonetics { border: 0; }
+
+  /* contact page */
+  #contact section {
+    padding: 0;
+  }
+  form { 
+    border: 0;
+    margin: 0;
+    width: 100%; 
+  }
+  
+  #formnote { text-align: center; }
+  
+  label {
+    clear: both;
+    display: block;
+    text-align: left;
+    width: 150px;
+    padding-left: 0;
+  }
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  textarea { height: 10em; }
+  
+  input { height: 3em; }
+
+  input[type="submit"] { margin-left: 0; width: 40%;}
+
+
+  /* footer */
+
+  footer { flex-direction: column; }
+
+  footer ul { text-align: center; }
+
+  footer li { border: none; }
+  
+  /* although credit and copyright are the same, had to keep these separated due to them being separated in the desktop version */
+  footer .credit {
+    margin: 10px 0;
+    padding: 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  footer #copyright {
+    margin: 10px 0;
+    padding: 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
